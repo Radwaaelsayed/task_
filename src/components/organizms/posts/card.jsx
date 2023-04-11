@@ -11,7 +11,7 @@ export default function PostCard({ data, handelClick }) {
       <CardHeader
         title={data?.title}
         onClick={handelClick}
-        sx={{ cursor: "pointer" }}
+        sx={{ cursor: "pointer", textTransform: "capitalize" }}
       />
       <CardMedia component="img" height="250" image={CardImg} alt="card img" />
       <CardContent>
