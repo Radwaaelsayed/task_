@@ -7,11 +7,11 @@ import Typography from "@mui/material/Typography";
 import CardImg from "../../../assets/card-img.png";
 export default function PostCard({ data, handelClick }) {
   return (
-    <Card sx={{ width: 600 }}>
+    <Card sx={{ width: { xs: "100%", md: 600 } }}>
       <CardHeader
         title={data?.title}
         onClick={handelClick}
-        sx={{ cursor: "pointer" }}
+        sx={{ cursor: "pointer", textTransform: "capitalize" }}
       />
       <CardMedia component="img" height="250" image={CardImg} alt="card img" />
       <CardContent>

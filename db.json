@@ -18,7 +18,7 @@
     {
       "title": "Post Four",
       "body": "loreaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "id": 81
+      "id": 4
     }
   ],
   "comments": [
@@ -49,6 +49,13 @@
       "email": "mona.elsayed@gmail.com",
       "comment": "some comment",
       "postId": 3
+    },
+    {
+      "id": 5,
+      "username": "Radwa elsayed ",
+      "email": "radwa.elsayed@gmail.com",
+      "comment": "some comment",
+      "postId": 4
     }
   ]
 }
