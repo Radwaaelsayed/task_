@@ -6,13 +6,13 @@ import {
   getPostDetailsSuccess,
   postsLoading,
 } from "./actions";
-const base_url = "http://localhost:8000";
+const baseURL = "http://localhost:8000";
 
 export const getAllPostsRequest = () => {
   return async (dispatch) => {
     dispatch(postsLoading({ type: "list", loading: true }));
     try {
-      const { data } = await axios.get(`${base_url}/posts`);
+      const { data } = await axios.get(`${baseURL}/posts`);
       dispatch(getAllPostsSuccess(data));
     } catch (error) {
       throw Error(error);
@@ -22,11 +22,11 @@ export const getAllPostsRequest = () => {
   };
 };
 
-export const getPostDetailsRequest = ({ post_id }) => {
+export const getPostDetailsRequest = ({ postId }) => {
   return async (dispatch) => {
     dispatch(postsLoading({ type: "details", loading: true }));
     try {
-      const { data } = await axios.get(`${base_url}/posts/${post_id}`);
+      const { data } = await axios.get(`${baseURL}/posts/${postId}`);
       dispatch(getPostDetailsSuccess(data));
     } catch (error) {
     } finally {
@@ -35,11 +35,11 @@ export const getPostDetailsRequest = ({ post_id }) => {
   };
 };
 
-export const getPostCommentsRequest = ({ post_id }) => {
+export const getPostCommentsRequest = ({ postId }) => {
   return async (dispatch) => {
     dispatch(postsLoading({ type: "details", loading: true }));
     try {
-      const { data } = await axios.get(`${base_url}/posts/${post_id}/comments`);
+      const { data } = await axios.get(`${baseURL}/posts/${postId}/comments`);
       dispatch(getPostCommentsSuccess(data));
     } catch (error) {
     } finally {
@@ -51,7 +51,7 @@ export const getPostCommentsRequest = ({ post_id }) => {
 export const createPostRequest = (body, action) => {
   return async (dispatch) => {
     try {
-      const { data } = await axios.post(`${base_url}/posts`, body);
+      const { data } = await axios.post(`${baseURL}/posts`, body);
       action && action();
       dispatch(createPostSuccess(data));
     } catch (error) {}

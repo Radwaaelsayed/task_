@@ -10,16 +10,16 @@ import Layout from "../components/organizms/layout";
 import PostDetailsTemplate from "../components/template/postDetails.template";
 
 const PostDetailsPage = () => {
-  const { post_id } = useParams();
+  const { postId } = useParams();
   const dispatch = useDispatch();
   const { isLoading, post, comments } = useSelector((state) => state.posts);
 
   useEffect(() => {
-    if (post_id) {
-      dispatch(getPostDetailsRequest({ post_id }));
-      dispatch(getPostCommentsRequest({ post_id }));
+    if (postId) {
+      dispatch(getPostDetailsRequest({ postId }));
+      dispatch(getPostCommentsRequest({ postId }));
     }
-  }, [post_id]);
+  }, [postId]);
   return (
     <Layout>
       <PostDetailsTemplate
