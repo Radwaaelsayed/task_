@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Post one",
+      "body": " This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like."
+    },
+    {
+      "id": 2,
+      "title": "Post two",
+      "body": " This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like."
+    },
+    {
+      "id": 3,
+      "title": "Post three",
+      "body": " This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like."
+    },
+    {
+      "title": "Post Four",
+      "body": "loreaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "id": 81
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "username": "Radwa elsayed ",
+      "email": "radwaaa.elsayed@gmail.com",
+      "comment": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "username": "Mona elsayed ",
+      "email": "mona.elsayed@gmail.com",
+      "comment": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 3,
+      "username": "Radwa elsayed ",
+      "email": "radwaaa.elsayed@gmail.com",
+      "comment": "some comment",
+      "postId": 2
+    },
+    {
+      "id": 4,
+      "username": "Mona elsayed ",
+      "email": "mona.elsayed@gmail.com",
+      "comment": "some comment",
+      "postId": 3
+    }
+  ]
+}
