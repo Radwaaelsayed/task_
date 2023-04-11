@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import CardImg from "../../../assets/card-img.png";
 export default function PostCard({ data, handelClick }) {
   return (
-    <Card sx={{ width: 600 }}>
+    <Card sx={{ width: { xs: "100%", md: 600 } }}>
       <CardHeader
         title={data?.title}
         onClick={handelClick}
