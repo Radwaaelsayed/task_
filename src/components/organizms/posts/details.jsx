@@ -18,11 +18,7 @@ const PostDetails = ({ data, comments }) => {
               height="100%"
             />
           </Box>
-          <Stack width={{ xs: "100%", md: "45%" }} gap={2} p={2}>
-            <Typography variant="h4" sx={{ textTransform: "capitalize" }}>
-              {data?.title}
-            </Typography>
-          </Stack>
+          <Stack width={{ xs: "100%", md: "45%" }} gap={2} p={2}></Stack>
         </Stack>
       </Paper>
       {comments?.length > 0 && <Typography variant="h4">Comments</Typography>}
