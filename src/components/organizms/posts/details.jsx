@@ -22,9 +22,6 @@ const PostDetails = ({ data, comments }) => {
             <Typography variant="h4" sx={{ textTransform: "capitalize" }}>
               {data?.title}
             </Typography>
-            <Typography variant="body2" sx={{ width: "90%" }}>
-              {data?.body}
-            </Typography>
           </Stack>
         </Stack>
       </Paper>
